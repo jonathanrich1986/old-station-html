@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Shops — The Old Station Welshpool</title>
+  <meta name="description" content="Browse the independent boutique shops at The Old Station Welshpool — gifts, homewares, fashion, books and more." />
+  <link rel="stylesheet" href="dist/styles.css" />
+</head>
+<body class="bg-white text-station-charcoal">
+
+  <!-- HEADER -->
+  <header id="site-header" class="bg-station-green-dark sticky top-0 z-50 transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 bg-station-gold rounded-sm flex items-center justify-center text-white font-serif font-bold text-lg group-hover:bg-station-gold-light transition-colors">OS</div>
+          <div class="leading-tight">
+            <div class="text-station-cream font-serif font-bold text-lg leading-none">The Old Station</div>
+            <div class="text-station-gold-light text-xs uppercase tracking-widest">Welshpool</div>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" data-nav class="nav-link">Home</a>
+          <a href="about.html" data-nav class="nav-link">About</a>
+          <a href="shop.html" data-nav class="nav-link">Shops</a>
+          <a href="cafe.html" data-nav class="nav-link">Café</a>
+          <a href="contact.html" data-nav class="nav-link">Contact</a>
+        </nav>
+        <button id="mobile-menu-btn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu" aria-expanded="false">
+          <span class="w-6 h-0.5 bg-station-cream block transition-transform duration-200 origin-center"></span>
+          <span class="w-6 h-0.5 bg-station-cream block transition-opacity duration-200"></span>
+          <span class="w-6 h-0.5 bg-station-cream block transition-transform duration-200 origin-center"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden flex-col bg-station-green border-t border-station-green-light px-4 pb-4 gap-1">
+      <a href="index.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Home</a>
+      <a href="about.html" data-nav class="nav-link py-3 border-b border-station-green-light block">About</a>
+      <a href="shop.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Shops</a>
+      <a href="cafe.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Café</a>
+      <a href="contact.html" data-nav class="nav-link py-3 block">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="relative py-28 flex items-center overflow-hidden">
+    <img src="https://picsum.photos/seed/shop-hero/1600/600" alt="Our Shops" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-station-green-dark/90 via-station-green-dark/70 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-white/60 mb-6">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-station-gold-light">Shops</span>
+      </nav>
+      <h1 class="font-serif text-5xl lg:text-6xl text-white font-bold mb-4">Our Shops</h1>
+      <p class="text-white/80 text-xl max-w-xl">Independent retailers bringing you the very best in gifts, fashion, food and more.</p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="bg-station-cream py-12">
+    <div class="max-w-3xl mx-auto text-center px-4">
+      <p class="text-station-brown-light text-lg leading-relaxed">
+        The Old Station is home to a carefully curated collection of independent retailers. From artisan Welsh gifts to contemporary fashion, there's something for everyone at our unique heritage shopping destination.
+      </p>
+    </div>
+  </section>
+
+  <!-- SHOP LISTINGS -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Category Filter -->
+      <div class="flex flex-wrap gap-3 justify-center mb-12">
+        <button class="px-5 py-2 bg-station-green text-white rounded-sm text-sm font-semibold uppercase tracking-wide hover:bg-station-green-dark transition-colors">All Shops</button>
+        <button class="px-5 py-2 bg-white border border-gray-300 text-station-charcoal rounded-sm text-sm font-semibold uppercase tracking-wide hover:border-station-green hover:text-station-green transition-colors">Gifts &amp; Home</button>
+        <button class="px-5 py-2 bg-white border border-gray-300 text-station-charcoal rounded-sm text-sm font-semibold uppercase tracking-wide hover:border-station-green hover:text-station-green transition-colors">Fashion</button>
+        <button class="px-5 py-2 bg-white border border-gray-300 text-station-charcoal rounded-sm text-sm font-semibold uppercase tracking-wide hover:border-station-green hover:text-station-green transition-colors">Food &amp; Drink</button>
+        <button class="px-5 py-2 bg-white border border-gray-300 text-station-charcoal rounded-sm text-sm font-semibold uppercase tracking-wide hover:border-station-green hover:text-station-green transition-colors">Books &amp; Arts</button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Shop 1 -->
+        <div class="card group">
+          <div class="relative overflow-hidden">
+            <img src="https://picsum.photos/seed/welsh-gifts/600/400" alt="Welsh Gifts &amp; Crafts" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="badge absolute top-4 left-4">Gifts &amp; Home</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-station-green-dark mb-1">Cambrian Gifts</h3>
+            <p class="text-station-gold text-xs font-semibold uppercase tracking-wide mb-3">Welsh Gifts &amp; Crafts</p>
+            <p class="text-station-brown-light text-sm leading-relaxed mb-4">Beautiful Welsh-made gifts, slate products, woollen goods and artisan crafts. The perfect place to find a unique souvenir or treat for a loved one.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <span class="text-xs text-station-brown-light">Unit 1 · Ground Floor</span>
+              <a href="product.html" class="text-station-green font-semibold text-sm hover:text-station-gold transition-colors">Browse Products →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop 2 -->
+        <div class="card group">
+          <div class="relative overflow-hidden">
+            <img src="https://picsum.photos/seed/homeware-shop/600/400" alt="Station Homewares" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="badge absolute top-4 left-4">Gifts &amp; Home</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-station-green-dark mb-1">Station Homewares</h3>
+            <p class="text-station-gold text-xs font-semibold uppercase tracking-wide mb-3">Home &amp; Living</p>
+            <p class="text-station-brown-light text-sm leading-relaxed mb-4">Stylish home accessories, candles, ceramics, textiles and seasonal décor to transform your living space with a touch of heritage charm.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <span class="text-xs text-station-brown-light">Unit 2 · Ground Floor</span>
+              <a href="product.html" class="text-station-green font-semibold text-sm hover:text-station-gold transition-colors">Browse Products →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop 3 -->
+        <div class="card group">
+          <div class="relative overflow-hidden">
+            <img src="https://picsum.photos/seed/fashion-store/600/400" alt="Powys Fashion" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="badge absolute top-4 left-4 bg-station-green">Fashion</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-station-green-dark mb-1">Powys Fashion</h3>
+            <p class="text-station-gold text-xs font-semibold uppercase tracking-wide mb-3">Women's Clothing &amp; Accessories</p>
+            <p class="text-station-brown-light text-sm leading-relaxed mb-4">Contemporary women's fashion with a sustainable focus. Carefully selected pieces from independent designers and ethically sourced collections.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <span class="text-xs text-station-brown-light">Unit 3 · Ground Floor</span>
+              <a href="product.html" class="text-station-green font-semibold text-sm hover:text-station-gold transition-colors">Browse Products →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop 4 -->
+        <div class="card group">
+          <div class="relative overflow-hidden">
+            <img src="https://picsum.photos/seed/jewellery-shop/600/400" alt="The Platform Jewellery" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="badge absolute top-4 left-4 bg-station-green">Fashion</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-station-green-dark mb-1">Platform Jewellery</h3>
+            <p class="text-station-gold text-xs font-semibold uppercase tracking-wide mb-3">Handcrafted Jewellery</p>
+            <p class="text-station-brown-light text-sm leading-relaxed mb-4">Exquisite handcrafted jewellery made by local artisans using sterling silver, gold vermeil and semi-precious stones inspired by the Welsh landscape.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <span class="text-xs text-station-brown-light">Unit 4 · Ground Floor</span>
+              <a href="product.html" class="text-station-green font-semibold text-sm hover:text-station-gold transition-colors">Browse Products →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop 5 -->
+        <div class="card group">
+          <div class="relative overflow-hidden">
+            <img src="https://picsum.photos/seed/food-hall/600/400" alt="Marches Food Hall" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="badge absolute top-4 left-4 bg-station-brown">Food &amp; Drink</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-station-green-dark mb-1">Marches Food Hall</h3>
+            <p class="text-station-gold text-xs font-semibold uppercase tracking-wide mb-3">Artisan Food &amp; Drink</p>
+            <p class="text-station-brown-light text-sm leading-relaxed mb-4">A treasure trove of local produce: Welsh cheeses, preserves, honey, craft beers, wines and specialty foods from across the Marches and beyond.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <span class="text-xs text-station-brown-light">Unit 5 · Ground Floor</span>
+              <a href="product.html" class="text-station-green font-semibold text-sm hover:text-station-gold transition-colors">Browse Products →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop 6 -->
+        <div class="card group">
+          <div class="relative overflow-hidden">
+            <img src="https://picsum.photos/seed/bookshop-art/600/400" alt="Cambrian Books &amp; Art" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="badge absolute top-4 left-4 bg-station-charcoal">Books &amp; Arts</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-station-green-dark mb-1">Cambrian Books &amp; Art</h3>
+            <p class="text-station-gold text-xs font-semibold uppercase tracking-wide mb-3">Books, Art &amp; Antiques</p>
+            <p class="text-station-brown-light text-sm leading-relaxed mb-4">A delightful mix of preloved books, original artwork, prints and antique curiosities. Perfect for hours of browsing and discovering hidden treasures.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <span class="text-xs text-station-brown-light">Unit 6 · First Floor</span>
+              <a href="product.html" class="text-station-green font-semibold text-sm hover:text-station-gold transition-colors">Browse Products →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ARE YOU A RETAILER -->
+  <section class="bg-station-cream-dark py-16">
+    <div class="max-w-3xl mx-auto text-center px-4">
+      <p class="text-station-gold uppercase tracking-widest text-sm font-semibold mb-2">Join Us</p>
+      <h2 class="section-title">Interested in a Unit?</h2>
+      <p class="text-station-brown-light text-lg leading-relaxed mb-8">
+        We occasionally have retail units available at The Old Station. If you're an independent retailer looking for a beautiful heritage setting to showcase your products, we'd love to hear from you.
+      </p>
+      <a href="contact.html" class="btn-primary">Enquire About a Unit</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-station-green-dark text-station-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-station-gold rounded-sm flex items-center justify-center text-white font-serif font-bold text-lg">OS</div>
+            <div>
+              <div class="font-serif font-bold text-lg leading-none">The Old Station</div>
+              <div class="text-station-gold-light text-xs uppercase tracking-widest">Welshpool</div>
+            </div>
+          </div>
+          <p class="text-station-cream/70 text-sm leading-relaxed">A Victorian railway station lovingly restored as a boutique retail and café destination in the heart of Powys.</p>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">About Us</a></li>
+            <li><a href="shop.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Our Shops</a></li>
+            <li><a href="cafe.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">The Café</a></li>
+            <li><a href="contact.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Opening Hours</h4>
+          <ul class="space-y-2 text-sm text-station-cream/70">
+            <li class="flex justify-between"><span>Mon – Fri</span><span class="text-station-cream">9am – 5pm</span></li>
+            <li class="flex justify-between"><span>Saturday</span><span class="text-station-cream">9am – 5:30pm</span></li>
+            <li class="flex justify-between"><span>Sunday</span><span class="text-station-cream">10am – 4pm</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Contact</h4>
+          <address class="not-italic text-sm text-station-cream/70 space-y-2">
+            <p>Raven Square, Welshpool<br/>Powys, SY21 7AW</p>
+            <p><a href="tel:+441938123456" class="hover:text-station-gold-light transition-colors">01938 123 456</a></p>
+            <p><a href="mailto:hello@theoldstationwelshpool.co.uk" class="hover:text-station-gold-light transition-colors break-all">hello@theoldstationwelshpool.co.uk</a></p>
+          </address>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-station-cream/50">
+        <p>&copy; 2024 The Old Station Welshpool. All rights reserved.</p>
+        <p>Designed with ♥ in Wales</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dist/bundle.js"></script>
+</body>
+</html>

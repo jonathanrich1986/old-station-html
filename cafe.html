@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platform Café — The Old Station Welshpool</title>
+  <meta name="description" content="The Platform Café at The Old Station Welshpool serves freshly prepared breakfasts, lunches and afternoon teas using locally sourced ingredients." />
+  <link rel="stylesheet" href="dist/styles.css" />
+</head>
+<body class="bg-white text-station-charcoal">
+
+  <!-- HEADER -->
+  <header id="site-header" class="bg-station-green-dark sticky top-0 z-50 transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 bg-station-gold rounded-sm flex items-center justify-center text-white font-serif font-bold text-lg group-hover:bg-station-gold-light transition-colors">OS</div>
+          <div class="leading-tight">
+            <div class="text-station-cream font-serif font-bold text-lg leading-none">The Old Station</div>
+            <div class="text-station-gold-light text-xs uppercase tracking-widest">Welshpool</div>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" data-nav class="nav-link">Home</a>
+          <a href="about.html" data-nav class="nav-link">About</a>
+          <a href="shop.html" data-nav class="nav-link">Shops</a>
+          <a href="cafe.html" data-nav class="nav-link">Café</a>
+          <a href="contact.html" data-nav class="nav-link">Contact</a>
+        </nav>
+        <button id="mobile-menu-btn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu" aria-expanded="false">
+          <span class="w-6 h-0.5 bg-station-cream block transition-transform duration-200 origin-center"></span>
+          <span class="w-6 h-0.5 bg-station-cream block transition-opacity duration-200"></span>
+          <span class="w-6 h-0.5 bg-station-cream block transition-transform duration-200 origin-center"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden flex-col bg-station-green border-t border-station-green-light px-4 pb-4 gap-1">
+      <a href="index.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Home</a>
+      <a href="about.html" data-nav class="nav-link py-3 border-b border-station-green-light block">About</a>
+      <a href="shop.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Shops</a>
+      <a href="cafe.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Café</a>
+      <a href="contact.html" data-nav class="nav-link py-3 block">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative py-36 flex items-center overflow-hidden">
+    <img src="https://picsum.photos/seed/cafe-hero/1600/700" alt="Platform Café at The Old Station" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-station-green-dark/90 via-station-green-dark/60 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-white/60 mb-6">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-station-gold-light">Café</span>
+      </nav>
+      <p class="text-station-gold-light uppercase tracking-[0.3em] text-sm mb-3">Good Food, Great Coffee</p>
+      <h1 class="font-serif text-5xl lg:text-6xl text-white font-bold mb-4">Platform Café</h1>
+      <p class="text-white/80 text-xl max-w-lg leading-relaxed">Artisan food and drink in a beautifully restored Victorian station setting.</p>
+      <div class="flex gap-4 mt-8">
+        <a href="#menu" class="btn-gold">View Our Menu</a>
+        <a href="contact.html" class="btn-secondary border-white text-white hover:bg-white hover:text-station-green-dark">Book a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-station-gold uppercase tracking-widest text-sm font-semibold mb-2">About the Café</p>
+          <h2 class="section-title">Freshly Made, Every Day</h2>
+          <p class="text-station-brown-light text-lg leading-relaxed mb-5">
+            Nestled within the original station waiting rooms of The Old Station, Platform Café combines the warmth of a traditional tea room with the quality of a modern artisan café.
+          </p>
+          <p class="text-station-brown-light text-lg leading-relaxed mb-8">
+            Our head chef Tom Davies creates every dish from scratch using locally sourced Welsh produce where possible. From our famous Welsh Breakfast to our indulgent afternoon tea, every visit is a treat.
+          </p>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="text-center p-4 bg-station-cream rounded-sm">
+              <div class="font-serif text-3xl font-bold text-station-gold mb-1">4.8★</div>
+              <div class="text-station-brown-light text-sm">Google Rating</div>
+            </div>
+            <div class="text-center p-4 bg-station-cream rounded-sm">
+              <div class="font-serif text-3xl font-bold text-station-gold mb-1">500+</div>
+              <div class="text-station-brown-light text-sm">Happy Customers/Month</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="https://picsum.photos/seed/cafe-interior-1/400/500" alt="Café interior" class="rounded-sm shadow-md object-cover w-full" style="height: 300px;" />
+          <div class="space-y-4">
+            <img src="https://picsum.photos/seed/cafe-food-detail/400/250" alt="Café food detail" class="rounded-sm shadow-md object-cover w-full" style="height: 143px;" />
+            <img src="https://picsum.photos/seed/cafe-coffee-2/400/250" alt="Barista coffee" class="rounded-sm shadow-md object-cover w-full" style="height: 143px;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu" class="py-20 bg-station-cream">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <p class="text-station-gold uppercase tracking-widest text-sm font-semibold mb-2">What's On</p>
+        <h2 class="section-title">Our Menu</h2>
+        <p class="text-station-brown-light max-w-xl mx-auto">All dishes are prepared fresh daily. Menu may vary seasonally. Please inform us of any dietary requirements.</p>
+      </div>
+
+      <!-- Menu Tabs -->
+      <div class="flex flex-wrap gap-3 justify-center mb-10">
+        <button
+          data-menu-tab="breakfast"
+          class="px-6 py-3 border text-sm font-semibold uppercase tracking-wide rounded-sm transition-colors bg-station-green text-white border-station-green"
+        >Breakfast</button>
+        <button
+          data-menu-tab="lunch"
+          class="px-6 py-3 border text-sm font-semibold uppercase tracking-wide rounded-sm transition-colors bg-white text-station-green border-gray-300 hover:border-station-green"
+        >Lunch</button>
+        <button
+          data-menu-tab="afternoon-tea"
+          class="px-6 py-3 border text-sm font-semibold uppercase tracking-wide rounded-sm transition-colors bg-white text-station-green border-gray-300 hover:border-station-green"
+        >Afternoon Tea</button>
+        <button
+          data-menu-tab="drinks"
+          class="px-6 py-3 border text-sm font-semibold uppercase tracking-wide rounded-sm transition-colors bg-white text-station-green border-gray-300 hover:border-station-green"
+        >Drinks</button>
+        <button
+          data-menu-tab="specials"
+          class="px-6 py-3 border text-sm font-semibold uppercase tracking-wide rounded-sm transition-colors bg-white text-station-green border-gray-300 hover:border-station-green"
+        >Daily Specials</button>
+      </div>
+
+      <!-- BREAKFAST MENU -->
+      <div data-menu-panel="breakfast">
+        <div class="bg-white rounded-sm shadow-sm overflow-hidden">
+          <div class="bg-station-green-dark px-6 py-4">
+            <h3 class="font-serif text-xl text-white font-bold">Breakfast</h3>
+            <p class="text-white/70 text-sm">Served Monday–Friday 9am–11:30am · Saturday–Sunday 9am–12pm</p>
+          </div>
+          <div class="p-6 space-y-1 divide-y divide-gray-100">
+            <!-- Item -->
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">The Old Station Full Welsh Breakfast</h4>
+                <p class="text-station-brown-light text-sm mt-1">Welsh back bacon, free-range eggs (fried, poached or scrambled), Herefordshire sausages, black pudding, grilled tomato, mushrooms &amp; buttered toast</p>
+                <div class="flex gap-2 mt-2"><span class="text-xs bg-station-cream text-station-brown px-2 py-0.5 rounded-sm">Gluten option available</span></div>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£11.50</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Lighter Breakfast</h4>
+                <p class="text-station-brown-light text-sm mt-1">Two free-range eggs on sourdough toast with your choice of bacon, sausage or mushrooms</p>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£7.50</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Vegetarian Breakfast</h4>
+                <p class="text-station-brown-light text-sm mt-1">Halloumi, free-range eggs, roasted tomatoes, mushrooms, spinach, baked beans &amp; wholegrain toast</p>
+                <div class="flex gap-2 mt-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-sm">Vegetarian</span></div>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£9.50</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Eggs Benedict</h4>
+                <p class="text-station-brown-light text-sm mt-1">Toasted English muffin with poached eggs, Carmarthen ham &amp; hollandaise sauce</p>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£8.50</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Smashed Avocado on Toast</h4>
+                <p class="text-station-brown-light text-sm mt-1">Smashed avocado on sourdough with feta, cherry tomatoes, pomegranate &amp; pumpkin seeds. Add a poached egg +£1.50</p>
+                <div class="flex gap-2 mt-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-sm">Vegetarian</span><span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-sm">Vegan option</span></div>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£8.00</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Porridge &amp; Berries</h4>
+                <p class="text-station-brown-light text-sm mt-1">Creamy Welsh oat porridge topped with seasonal berries, honey &amp; toasted almonds</p>
+                <div class="flex gap-2 mt-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-sm">Vegetarian</span><span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-sm">Vegan option</span></div>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£5.50</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Freshly Baked Croissant</h4>
+                <p class="text-station-brown-light text-sm mt-1">Served warm with Abernethy Butter &amp; your choice of preserve</p>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£3.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LUNCH MENU -->
+      <div data-menu-panel="lunch" class="hidden">
+        <div class="bg-white rounded-sm shadow-sm overflow-hidden">
+          <div class="bg-station-green-dark px-6 py-4">
+            <h3 class="font-serif text-xl text-white font-bold">Lunch</h3>
+            <p class="text-white/70 text-sm">Served daily 12pm–3pm</p>
+          </div>
+          <div class="p-6 space-y-1 divide-y divide-gray-100">
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Ploughman's Platter</h4>
+                <p class="text-station-brown-light text-sm mt-1">Selection of Welsh cheeses (Y Fenni, Perl Wen, Black Bomber), honey-roast ham, homemade chutney, pickles, crusty bread &amp; salad</p>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£13.50</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Soup of the Day</h4>
+                <p class="text-station-brown-light text-sm mt-1">Freshly made seasonal soup served with crusty artisan bread &amp; butter. Ask your server for today's selection.</p>
+                <div class="flex gap-2 mt-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-sm">Vegetarian</span></div>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£6.50</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Platform Club Sandwich</h4>
+                <p class="text-station-brown-light text-sm mt-1">Triple-decker sandwich with grilled chicken, crispy bacon, egg mayo, lettuce, tomato &amp; Dijon. Served with crisps &amp; dressed salad.</p>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£10.50</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Welsh Rarebit</h4>
+                <p class="text-station-brown-light text-sm mt-1">Classic Welsh rarebit with mature Cheddar sauce, wholegrain mustard &amp; Worcestershire on toasted sourdough, served with green salad</p>
+                <div class="flex gap-2 mt-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-sm">Vegetarian</span></div>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£9.00</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Cambrian Quiche</h4>
+                <p class="text-station-brown-light text-sm mt-1">Homemade quiche of the day served with new potatoes, coleslaw &amp; mixed leaves. Ask server for today's filling.</p>
+                <div class="flex gap-2 mt-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-sm">Vegetarian option</span></div>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£9.50</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Jacket Potato</h4>
+                <p class="text-station-brown-light text-sm mt-1">Large baked potato with your choice of: Mature cheddar, tuna mayo, baked beans, or coronation chicken. Served with side salad.</p>
+                <div class="flex gap-2 mt-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-sm">Vegan option</span></div>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£8.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AFTERNOON TEA MENU -->
+      <div data-menu-panel="afternoon-tea" class="hidden">
+        <div class="bg-white rounded-sm shadow-sm overflow-hidden">
+          <div class="bg-station-gold px-6 py-4">
+            <h3 class="font-serif text-xl text-white font-bold">Afternoon Tea</h3>
+            <p class="text-white/80 text-sm">Served daily 2pm–5pm · Booking recommended for parties of 4+</p>
+          </div>
+          <div class="p-8">
+            <div class="text-center mb-8">
+              <h4 class="font-serif text-2xl font-bold text-station-green-dark mb-3">The Old Station Afternoon Tea</h4>
+              <p class="text-station-brown-light max-w-lg mx-auto">Our signature three-tiered afternoon tea is a celebration of Welsh baking tradition, served on beautiful vintage china.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              <div class="text-center bg-station-cream rounded-sm p-6">
+                <div class="font-serif text-4xl mb-3">🥪</div>
+                <h5 class="font-serif font-bold text-station-green-dark mb-3">Finger Sandwiches</h5>
+                <ul class="text-station-brown-light text-sm space-y-1 text-left">
+                  <li>• Smoked salmon &amp; cream cheese</li>
+                  <li>• Egg &amp; cress on white bread</li>
+                  <li>• Honey-roast ham &amp; mustard</li>
+                  <li>• Cucumber &amp; cream cheese (v)</li>
+                </ul>
+              </div>
+              <div class="text-center bg-station-cream rounded-sm p-6">
+                <div class="font-serif text-4xl mb-3">🫖</div>
+                <h5 class="font-serif font-bold text-station-green-dark mb-3">Fresh Welsh Scones</h5>
+                <ul class="text-station-brown-light text-sm space-y-1 text-left">
+                  <li>• Plain &amp; fruit scones (2 each)</li>
+                  <li>• Clotted cream</li>
+                  <li>• Strawberry preserve</li>
+                  <li>• Lemon curd</li>
+                </ul>
+              </div>
+              <div class="text-center bg-station-cream rounded-sm p-6">
+                <div class="font-serif text-4xl mb-3">🍰</div>
+                <h5 class="font-serif font-bold text-station-green-dark mb-3">Patisserie &amp; Cakes</h5>
+                <ul class="text-station-brown-light text-sm space-y-1 text-left">
+                  <li>• Mini Welsh cakes</li>
+                  <li>• Victoria sponge slice</li>
+                  <li>• Lemon drizzle tartlet</li>
+                  <li>• Bara Brith &amp; butter</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="text-center space-y-3">
+              <p class="text-station-brown-light text-sm">Includes a pot of tea or coffee per person</p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div class="text-center">
+                  <div class="font-serif text-3xl font-bold text-station-green-dark">£22.50</div>
+                  <div class="text-station-brown-light text-sm">per person</div>
+                </div>
+                <div class="text-center">
+                  <div class="font-serif text-3xl font-bold text-station-gold">£28.00</div>
+                  <div class="text-station-brown-light text-sm">Champagne Afternoon Tea</div>
+                </div>
+              </div>
+              <a href="contact.html" class="btn-gold inline-block mt-4">Book Afternoon Tea</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DRINKS MENU -->
+      <div data-menu-panel="drinks" class="hidden">
+        <div class="bg-white rounded-sm shadow-sm overflow-hidden">
+          <div class="bg-station-brown px-6 py-4">
+            <h3 class="font-serif text-xl text-white font-bold">Drinks</h3>
+            <p class="text-white/70 text-sm">Available all day</p>
+          </div>
+          <div class="p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Hot Drinks -->
+              <div>
+                <h4 class="font-serif text-lg font-bold text-station-green-dark mb-4 pb-2 border-b border-gray-200">Hot Drinks</h4>
+                <div class="space-y-3">
+                  <div class="flex justify-between"><span class="text-station-charcoal">Americano</span><span class="text-station-green font-semibold">£2.80</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Flat White</span><span class="text-station-green font-semibold">£3.20</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Cappuccino</span><span class="text-station-green font-semibold">£3.20</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Latte</span><span class="text-station-green font-semibold">£3.40</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Oat / Soy / Almond Milk</span><span class="text-station-green font-semibold">+£0.40</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Pot of Tea (for 2)</span><span class="text-station-green font-semibold">£3.50</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Specialist Leaf Teas</span><span class="text-station-green font-semibold">£2.50</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Hot Chocolate</span><span class="text-station-green font-semibold">£3.50</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Welsh Breakfast Tea</span><span class="text-station-green font-semibold">£2.20</span></div>
+                </div>
+              </div>
+              <!-- Cold Drinks & Others -->
+              <div>
+                <h4 class="font-serif text-lg font-bold text-station-green-dark mb-4 pb-2 border-b border-gray-200">Cold Drinks &amp; More</h4>
+                <div class="space-y-3">
+                  <div class="flex justify-between"><span class="text-station-charcoal">Iced Coffee</span><span class="text-station-green font-semibold">£3.80</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Iced Latte</span><span class="text-station-green font-semibold">£4.00</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Fresh Lemonade</span><span class="text-station-green font-semibold">£3.00</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Welsh Spring Water (still/sparkling)</span><span class="text-station-green font-semibold">£2.00</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Elderflower Pressé</span><span class="text-station-green font-semibold">£2.80</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Fruit Juices</span><span class="text-station-green font-semibold">£2.20</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Soft Drinks (can)</span><span class="text-station-green font-semibold">£1.80</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Welsh Craft Beer / Cider</span><span class="text-station-green font-semibold">from £4.50</span></div>
+                  <div class="flex justify-between"><span class="text-station-charcoal">Glass of House Wine</span><span class="text-station-green font-semibold">from £5.00</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SPECIALS -->
+      <div data-menu-panel="specials" class="hidden">
+        <div class="bg-white rounded-sm shadow-sm overflow-hidden">
+          <div class="bg-station-gold px-6 py-4">
+            <h3 class="font-serif text-xl text-white font-bold">This Week's Specials</h3>
+            <p class="text-white/80 text-sm">Menu updated weekly · While stocks last</p>
+          </div>
+          <div class="p-6 space-y-1 divide-y divide-gray-100">
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <h4 class="font-semibold text-station-charcoal">Pan-Fried Sea Bass with Samphire</h4>
+                  <span class="badge text-xs">Chef's Special</span>
+                </div>
+                <p class="text-station-brown-light text-sm mt-1">Line-caught Welsh sea bass with marsh samphire, lemon butter, crushed Jersey Royal potatoes &amp; garden peas</p>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£16.00</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <h4 class="font-semibold text-station-charcoal">Slow-Roasted Lamb Shoulder</h4>
+                <p class="text-station-brown-light text-sm mt-1">Welsh mountain lamb slow-roasted for 8 hours with rosemary, garlic &amp; red wine jus. Served with celeriac purée &amp; seasonal greens.</p>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£17.50</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <h4 class="font-semibold text-station-charcoal">Mushroom &amp; Leek Risotto</h4>
+                  <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-sm">Vegetarian</span>
+                </div>
+                <p class="text-station-brown-light text-sm mt-1">Creamy Arborio rice with wild mushrooms, Welsh leeks, Perl Wen cheese, truffle oil &amp; crispy sage</p>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£12.00</span>
+            </div>
+            <div class="flex justify-between items-start py-4 gap-4">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <h4 class="font-semibold text-station-charcoal">Bara Brith Bread &amp; Butter Pudding</h4>
+                  <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-sm">Dessert</span>
+                </div>
+                <p class="text-station-brown-light text-sm mt-1">Traditional Welsh Bara Brith transformed into a rich bread &amp; butter pudding, served warm with vanilla custard</p>
+              </div>
+              <span class="text-station-green font-bold text-lg flex-shrink-0">£6.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-sm text-station-brown-light mt-8">
+        Please speak to a member of staff about allergens and dietary requirements. Full allergen information is available on request.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-title text-center mb-10">Café Gallery</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://picsum.photos/seed/cafe-gallery-1/400/400" alt="Platform Café food" class="w-full aspect-square object-cover rounded-sm shadow-sm hover:shadow-md transition-shadow" />
+        <img src="https://picsum.photos/seed/cafe-gallery-2/400/400" alt="Afternoon tea spread" class="w-full aspect-square object-cover rounded-sm shadow-sm hover:shadow-md transition-shadow" />
+        <img src="https://picsum.photos/seed/cafe-gallery-3/400/400" alt="Barista at work" class="w-full aspect-square object-cover rounded-sm shadow-sm hover:shadow-md transition-shadow" />
+        <img src="https://picsum.photos/seed/cafe-gallery-4/400/400" alt="Café interior" class="w-full aspect-square object-cover rounded-sm shadow-sm hover:shadow-md transition-shadow" />
+        <img src="https://picsum.photos/seed/cafe-gallery-5/400/400" alt="Fresh pastries" class="w-full aspect-square object-cover rounded-sm shadow-sm hover:shadow-md transition-shadow" />
+        <img src="https://picsum.photos/seed/cafe-gallery-6/400/400" alt="Welsh breakfast" class="w-full aspect-square object-cover rounded-sm shadow-sm hover:shadow-md transition-shadow" />
+        <img src="https://picsum.photos/seed/cafe-gallery-7/400/400" alt="Station café seating" class="w-full aspect-square object-cover rounded-sm shadow-sm hover:shadow-md transition-shadow" />
+        <img src="https://picsum.photos/seed/cafe-gallery-8/400/400" alt="Coffee and cake" class="w-full aspect-square object-cover rounded-sm shadow-sm hover:shadow-md transition-shadow" />
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK A TABLE CTA -->
+  <section class="bg-station-green py-16 text-center">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="font-serif text-3xl text-white font-bold mb-4">Ready to Visit?</h2>
+      <p class="text-white/80 text-lg mb-8">We welcome walk-ins, but recommend booking for afternoon tea and parties of 6 or more. Give us a call or send us a message.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+441938123456" class="btn-gold">Call 01938 123 456</a>
+        <a href="contact.html" class="btn-secondary border-white text-white hover:bg-white hover:text-station-green-dark">Book Online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-station-green-dark text-station-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-station-gold rounded-sm flex items-center justify-center text-white font-serif font-bold text-lg">OS</div>
+            <div>
+              <div class="font-serif font-bold text-lg leading-none">The Old Station</div>
+              <div class="text-station-gold-light text-xs uppercase tracking-widest">Welshpool</div>
+            </div>
+          </div>
+          <p class="text-station-cream/70 text-sm leading-relaxed">A Victorian railway station lovingly restored as a boutique retail and café destination in the heart of Powys.</p>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">About Us</a></li>
+            <li><a href="shop.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Our Shops</a></li>
+            <li><a href="cafe.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">The Café</a></li>
+            <li><a href="contact.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Café Hours</h4>
+          <ul class="space-y-2 text-sm text-station-cream/70">
+            <li class="flex justify-between"><span>Mon – Fri</span><span class="text-station-cream">9am – 5pm</span></li>
+            <li class="flex justify-between"><span>Saturday</span><span class="text-station-cream">9am – 5:30pm</span></li>
+            <li class="flex justify-between"><span>Sunday</span><span class="text-station-cream">10am – 4pm</span></li>
+          </ul>
+          <p class="text-station-cream/50 text-xs mt-3">Last food orders 30 mins before closing.</p>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Contact</h4>
+          <address class="not-italic text-sm text-station-cream/70 space-y-2">
+            <p>Raven Square, Welshpool<br/>Powys, SY21 7AW</p>
+            <p><a href="tel:+441938123456" class="hover:text-station-gold-light transition-colors">01938 123 456</a></p>
+            <p><a href="mailto:hello@theoldstationwelshpool.co.uk" class="hover:text-station-gold-light transition-colors break-all">hello@theoldstationwelshpool.co.uk</a></p>
+          </address>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-station-cream/50">
+        <p>&copy; 2024 The Old Station Welshpool. All rights reserved.</p>
+        <p>Designed with ♥ in Wales</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dist/bundle.js"></script>
+</body>
+</html>
