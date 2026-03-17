@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — The Old Station Welshpool</title>
+  <meta name="description" content="Get in touch with The Old Station Welshpool. Call us, email us or send us a message using our contact form." />
+  <link rel="stylesheet" href="dist/styles.css" />
+</head>
+<body class="bg-white text-station-charcoal">
+
+  <!-- HEADER -->
+  <header id="site-header" class="bg-station-green-dark sticky top-0 z-50 transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 bg-station-gold rounded-sm flex items-center justify-center text-white font-serif font-bold text-lg group-hover:bg-station-gold-light transition-colors">OS</div>
+          <div class="leading-tight">
+            <div class="text-station-cream font-serif font-bold text-lg leading-none">The Old Station</div>
+            <div class="text-station-gold-light text-xs uppercase tracking-widest">Welshpool</div>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" data-nav class="nav-link">Home</a>
+          <a href="about.html" data-nav class="nav-link">About</a>
+          <a href="shop.html" data-nav class="nav-link">Shops</a>
+          <a href="cafe.html" data-nav class="nav-link">Café</a>
+          <a href="contact.html" data-nav class="nav-link">Contact</a>
+        </nav>
+        <button id="mobile-menu-btn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu" aria-expanded="false">
+          <span class="w-6 h-0.5 bg-station-cream block transition-transform duration-200 origin-center"></span>
+          <span class="w-6 h-0.5 bg-station-cream block transition-opacity duration-200"></span>
+          <span class="w-6 h-0.5 bg-station-cream block transition-transform duration-200 origin-center"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden flex-col bg-station-green border-t border-station-green-light px-4 pb-4 gap-1">
+      <a href="index.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Home</a>
+      <a href="about.html" data-nav class="nav-link py-3 border-b border-station-green-light block">About</a>
+      <a href="shop.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Shops</a>
+      <a href="cafe.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Café</a>
+      <a href="contact.html" data-nav class="nav-link py-3 block">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="relative py-28 flex items-center overflow-hidden">
+    <img src="https://picsum.photos/seed/contact-hero/1600/600" alt="Contact The Old Station" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-station-green-dark/90 via-station-green-dark/70 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-white/60 mb-6">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-station-gold-light">Contact</span>
+      </nav>
+      <h1 class="font-serif text-5xl lg:text-6xl text-white font-bold mb-4">Get In Touch</h1>
+      <p class="text-white/80 text-xl max-w-xl">We'd love to hear from you. Whether it's a booking, enquiry or just to say hello.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+        <!-- Contact Info -->
+        <div class="lg:col-span-1 space-y-8">
+
+          <div>
+            <p class="text-station-gold uppercase tracking-widest text-sm font-semibold mb-2">Get In Touch</p>
+            <h2 class="section-title">Contact Details</h2>
+          </div>
+
+          <!-- Address -->
+          <div class="flex gap-4">
+            <div class="w-12 h-12 bg-station-cream rounded-sm flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-station-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-station-charcoal mb-1">Visit Us</h3>
+              <address class="not-italic text-station-brown-light text-sm leading-relaxed">
+                The Old Station<br/>
+                Raven Square<br/>
+                Welshpool<br/>
+                Powys, SY21 7AW
+              </address>
+              <a href="https://maps.google.com/?q=Welshpool+Station+SY21+7AW" target="_blank" rel="noopener noreferrer" class="text-station-green text-sm font-semibold hover:text-station-gold transition-colors mt-2 inline-block">Get directions ↗</a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex gap-4">
+            <div class="w-12 h-12 bg-station-cream rounded-sm flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-station-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-station-charcoal mb-1">Call Us</h3>
+              <a href="tel:+441938123456" class="text-station-green text-lg font-bold hover:text-station-gold transition-colors">01938 123 456</a>
+              <p class="text-station-brown-light text-sm mt-1">Mon–Sat 9am–5pm, Sun 10am–4pm</p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="flex gap-4">
+            <div class="w-12 h-12 bg-station-cream rounded-sm flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-station-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-station-charcoal mb-1">Email Us</h3>
+              <a href="mailto:hello@theoldstationwelshpool.co.uk" class="text-station-green font-bold hover:text-station-gold transition-colors break-all text-sm">hello@theoldstationwelshpool.co.uk</a>
+              <p class="text-station-brown-light text-sm mt-1">We'll reply within 2 business days</p>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div class="flex gap-4">
+            <div class="w-12 h-12 bg-station-cream rounded-sm flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-station-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-station-charcoal mb-2">Follow Us</h3>
+              <div class="flex gap-3">
+                <a href="#" aria-label="Facebook" class="w-9 h-9 bg-station-green hover:bg-station-gold rounded-full flex items-center justify-center transition-colors">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                </a>
+                <a href="#" aria-label="Instagram" class="w-9 h-9 bg-station-green hover:bg-station-gold rounded-full flex items-center justify-center transition-colors">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Opening Hours -->
+          <div class="bg-station-cream rounded-sm p-6">
+            <h3 class="font-serif font-bold text-station-green-dark mb-4">Opening Hours</h3>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between"><span class="text-station-charcoal">Monday – Friday</span><span class="font-semibold text-station-green">9am – 5pm</span></div>
+              <div class="flex justify-between"><span class="text-station-charcoal">Saturday</span><span class="font-semibold text-station-green">9am – 5:30pm</span></div>
+              <div class="flex justify-between"><span class="text-station-charcoal">Sunday</span><span class="font-semibold text-station-green">10am – 4pm</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-2">
+          <div class="bg-white border border-gray-100 rounded-sm shadow-sm p-8">
+            <h2 class="font-serif text-2xl font-bold text-station-green-dark mb-2">Send Us a Message</h2>
+            <p class="text-station-brown-light mb-8">Fill in the form below and we'll get back to you as soon as possible.</p>
+
+            <!-- Success Message -->
+            <div id="form-success" class="hidden bg-green-50 border border-green-200 text-green-800 rounded-sm p-4 mb-6 flex items-center gap-3">
+              <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <p>Thank you! Your message has been sent. We'll be in touch within 2 business days.</p>
+            </div>
+
+            <form id="contact-form" novalidate class="space-y-6">
+              <!-- Name fields -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="first-name" class="form-label">First Name <span class="text-red-500">*</span></label>
+                  <input type="text" id="first-name" name="first_name" required autocomplete="given-name" placeholder="Jane" class="form-input" />
+                </div>
+                <div>
+                  <label for="last-name" class="form-label">Last Name <span class="text-red-500">*</span></label>
+                  <input type="text" id="last-name" name="last_name" required autocomplete="family-name" placeholder="Smith" class="form-input" />
+                </div>
+              </div>
+
+              <!-- Email + Phone -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="email" class="form-label">Email Address <span class="text-red-500">*</span></label>
+                  <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@example.com" class="form-input" />
+                </div>
+                <div>
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="07XXX XXX XXX" class="form-input" />
+                </div>
+              </div>
+
+              <!-- Enquiry Type -->
+              <div>
+                <label for="enquiry-type" class="form-label">Enquiry Type <span class="text-red-500">*</span></label>
+                <select id="enquiry-type" name="enquiry_type" required class="form-input">
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="general">General Enquiry</option>
+                  <option value="cafe-booking">Café Table Booking</option>
+                  <option value="afternoon-tea">Afternoon Tea Booking</option>
+                  <option value="events">Events &amp; Private Hire</option>
+                  <option value="retail-unit">Retail Unit Enquiry</option>
+                  <option value="press">Press &amp; Media</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Date (for bookings) -->
+              <div>
+                <label for="visit-date" class="form-label">Preferred Visit Date <span class="text-station-brown-light font-normal normal-case">(if booking)</span></label>
+                <input type="date" id="visit-date" name="visit_date" class="form-input" />
+              </div>
+
+              <!-- Party Size -->
+              <div>
+                <label for="party-size" class="form-label">Party Size <span class="text-station-brown-light font-normal normal-case">(if booking)</span></label>
+                <select id="party-size" name="party_size" class="form-input">
+                  <option value="">Select…</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10+</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div>
+                <label for="message" class="form-label">Message <span class="text-red-500">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows="5"
+                  placeholder="Please include any dietary requirements, special requests or questions…"
+                  class="form-input resize-none"
+                ></textarea>
+              </div>
+
+              <!-- How did you hear about us -->
+              <div>
+                <label for="how-heard" class="form-label">How Did You Hear About Us?</label>
+                <select id="how-heard" name="how_heard" class="form-input">
+                  <option value="">Select…</option>
+                  <option>Google Search</option>
+                  <option>Social Media</option>
+                  <option>Word of Mouth</option>
+                  <option>Local Press</option>
+                  <option>Visited Before</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <!-- Consent -->
+              <div class="flex items-start gap-3">
+                <input type="checkbox" id="consent" name="consent" required class="mt-1 w-4 h-4 rounded border-gray-300 text-station-green focus:ring-station-green" />
+                <label for="consent" class="text-sm text-station-brown-light leading-relaxed">
+                  I agree to my personal information being used to process this enquiry. We will not share your details with third parties. See our <a href="#" class="text-station-green hover:text-station-gold underline">Privacy Policy</a>.
+                  <span class="text-red-500">*</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn-primary w-full text-center text-base py-4">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <section class="bg-station-cream-dark py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <h2 class="section-title">Find Us</h2>
+        <p class="text-station-brown-light">We're situated at Raven Square in the heart of Welshpool, with free parking nearby.</p>
+      </div>
+      <!-- Map placeholder -->
+      <div class="relative overflow-hidden rounded-sm shadow-md" style="height: 400px;">
+        <img
+          src="https://picsum.photos/seed/map-placeholder/1400/400"
+          alt="Map showing location of The Old Station Welshpool"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-station-green-dark/40 flex items-center justify-center">
+          <div class="bg-white rounded-sm p-6 text-center shadow-xl">
+            <div class="w-12 h-12 bg-station-gold rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+            </div>
+            <p class="font-serif font-bold text-station-green-dark text-lg">The Old Station</p>
+            <p class="text-station-brown-light text-sm">Raven Square, Welshpool, SY21 7AW</p>
+            <a href="https://maps.google.com/?q=Welshpool+Station+SY21+7AW" target="_blank" rel="noopener noreferrer" class="mt-4 btn-primary inline-block text-sm">
+              Open in Google Maps ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Directions info -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+        <div class="text-center">
+          <div class="w-12 h-12 bg-station-green rounded-full flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg>
+          </div>
+          <h3 class="font-serif font-bold text-station-green-dark mb-2">By Car</h3>
+          <p class="text-station-brown-light text-sm leading-relaxed">Located on Raven Square in Welshpool town centre. Free parking available at Raven Square Car Park (2 min walk).</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-station-green rounded-full flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="font-serif font-bold text-station-green-dark mb-2">By Train</h3>
+          <p class="text-station-brown-light text-sm leading-relaxed">Welshpool railway station is just a 10-minute walk away. Trains run regularly from Shrewsbury and Birmingham.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-station-green rounded-full flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3 class="font-serif font-bold text-station-green-dark mb-2">Accessibility</h3>
+          <p class="text-station-brown-light text-sm leading-relaxed">The Old Station is fully accessible, with step-free entry, accessible toilets and disabled parking bays nearby.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <p class="text-station-gold uppercase tracking-widest text-sm font-semibold mb-2">Quick Answers</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-4">
+        <details class="bg-station-cream rounded-sm p-5 group">
+          <summary class="font-semibold text-station-green-dark cursor-pointer flex justify-between items-center list-none">
+            Do I need to book a table at the café?
+            <svg class="w-5 h-5 text-station-green group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <p class="text-station-brown-light text-sm mt-3 leading-relaxed">Walk-ins are always welcome. However, we recommend booking for parties of 4 or more, and for afternoon tea we require at least 24 hours' notice. Call us or use the contact form above to reserve.</p>
+        </details>
+        <details class="bg-station-cream rounded-sm p-5 group">
+          <summary class="font-semibold text-station-green-dark cursor-pointer flex justify-between items-center list-none">
+            Is there parking at The Old Station?
+            <svg class="w-5 h-5 text-station-green group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <p class="text-station-brown-light text-sm mt-3 leading-relaxed">Free parking is available at Raven Square Car Park, just a 2-minute walk from our entrance. There are also disabled parking bays directly adjacent to the building.</p>
+        </details>
+        <details class="bg-station-cream rounded-sm p-5 group">
+          <summary class="font-semibold text-station-green-dark cursor-pointer flex justify-between items-center list-none">
+            Are dogs welcome?
+            <svg class="w-5 h-5 text-station-green group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <p class="text-station-brown-light text-sm mt-3 leading-relaxed">Well-behaved dogs are welcome in the outdoor seating area of the café. We always have fresh water on hand for our four-legged visitors!</p>
+        </details>
+        <details class="bg-station-cream rounded-sm p-5 group">
+          <summary class="font-semibold text-station-green-dark cursor-pointer flex justify-between items-center list-none">
+            Do you cater for dietary requirements?
+            <svg class="w-5 h-5 text-station-green group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <p class="text-station-brown-light text-sm mt-3 leading-relaxed">Yes! We offer vegetarian and vegan options on our menu, and can accommodate most dietary requirements with advance notice. Please let us know when booking or speak to a member of staff on arrival.</p>
+        </details>
+        <details class="bg-station-cream rounded-sm p-5 group">
+          <summary class="font-semibold text-station-green-dark cursor-pointer flex justify-between items-center list-none">
+            Can I hire the venue for a private event?
+            <svg class="w-5 h-5 text-station-green group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <p class="text-station-brown-light text-sm mt-3 leading-relaxed">The Old Station is an atmospheric venue for private parties, corporate events, product launches and celebrations. Please get in touch via the contact form above and select 'Events &amp; Private Hire' to start the conversation.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-station-green-dark text-station-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-station-gold rounded-sm flex items-center justify-center text-white font-serif font-bold text-lg">OS</div>
+            <div>
+              <div class="font-serif font-bold text-lg leading-none">The Old Station</div>
+              <div class="text-station-gold-light text-xs uppercase tracking-widest">Welshpool</div>
+            </div>
+          </div>
+          <p class="text-station-cream/70 text-sm leading-relaxed">A Victorian railway station lovingly restored as a boutique retail and café destination in the heart of Powys.</p>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">About Us</a></li>
+            <li><a href="shop.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Our Shops</a></li>
+            <li><a href="cafe.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">The Café</a></li>
+            <li><a href="contact.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Opening Hours</h4>
+          <ul class="space-y-2 text-sm text-station-cream/70">
+            <li class="flex justify-between"><span>Mon – Fri</span><span class="text-station-cream">9am – 5pm</span></li>
+            <li class="flex justify-between"><span>Saturday</span><span class="text-station-cream">9am – 5:30pm</span></li>
+            <li class="flex justify-between"><span>Sunday</span><span class="text-station-cream">10am – 4pm</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Contact</h4>
+          <address class="not-italic text-sm text-station-cream/70 space-y-2">
+            <p>Raven Square, Welshpool<br/>Powys, SY21 7AW</p>
+            <p><a href="tel:+441938123456" class="hover:text-station-gold-light transition-colors">01938 123 456</a></p>
+            <p><a href="mailto:hello@theoldstationwelshpool.co.uk" class="hover:text-station-gold-light transition-colors break-all">hello@theoldstationwelshpool.co.uk</a></p>
+          </address>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-station-cream/50">
+        <p>&copy; 2024 The Old Station Welshpool. All rights reserved.</p>
+        <p>Designed with ♥ in Wales</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dist/bundle.js"></script>
+</body>
+</html>

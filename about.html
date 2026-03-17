@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — The Old Station Welshpool</title>
+  <meta name="description" content="Learn about the history of The Old Station Welshpool — a Victorian railway station lovingly restored as a boutique retail and café destination." />
+  <link rel="stylesheet" href="dist/styles.css" />
+</head>
+<body class="bg-white text-station-charcoal">
+
+  <!-- HEADER -->
+  <header id="site-header" class="bg-station-green-dark sticky top-0 z-50 transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 bg-station-gold rounded-sm flex items-center justify-center text-white font-serif font-bold text-lg group-hover:bg-station-gold-light transition-colors">OS</div>
+          <div class="leading-tight">
+            <div class="text-station-cream font-serif font-bold text-lg leading-none">The Old Station</div>
+            <div class="text-station-gold-light text-xs uppercase tracking-widest">Welshpool</div>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" data-nav class="nav-link">Home</a>
+          <a href="about.html" data-nav class="nav-link">About</a>
+          <a href="shop.html" data-nav class="nav-link">Shops</a>
+          <a href="cafe.html" data-nav class="nav-link">Café</a>
+          <a href="contact.html" data-nav class="nav-link">Contact</a>
+        </nav>
+        <button id="mobile-menu-btn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu" aria-expanded="false">
+          <span class="w-6 h-0.5 bg-station-cream block transition-transform duration-200 origin-center"></span>
+          <span class="w-6 h-0.5 bg-station-cream block transition-opacity duration-200"></span>
+          <span class="w-6 h-0.5 bg-station-cream block transition-transform duration-200 origin-center"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden flex-col bg-station-green border-t border-station-green-light px-4 pb-4 gap-1">
+      <a href="index.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Home</a>
+      <a href="about.html" data-nav class="nav-link py-3 border-b border-station-green-light block">About</a>
+      <a href="shop.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Shops</a>
+      <a href="cafe.html" data-nav class="nav-link py-3 border-b border-station-green-light block">Café</a>
+      <a href="contact.html" data-nav class="nav-link py-3 block">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="relative py-32 flex items-center overflow-hidden">
+    <img src="https://picsum.photos/seed/about-hero/1600/700" alt="The Old Station heritage" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-station-green-dark/90 via-station-green-dark/70 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-white/60 mb-6">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-station-gold-light">About</span>
+      </nav>
+      <h1 class="font-serif text-5xl lg:text-6xl text-white font-bold mb-4">Our Story</h1>
+      <p class="text-white/80 text-xl max-w-xl">From working railway station to beloved community destination.</p>
+    </div>
+  </section>
+
+  <!-- HISTORY SECTION -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-station-gold uppercase tracking-widest text-sm font-semibold mb-2">Est. Circa 1860</p>
+          <h2 class="section-title">A Victorian Legacy</h2>
+          <div class="prose prose-lg text-station-brown-light space-y-4">
+            <p>
+              The Old Station in Welshpool was built in the 1860s as part of the historic Cambrian Railways network, serving as a vital transport hub for the market town of Welshpool and the surrounding rural communities of mid-Wales.
+            </p>
+            <p>
+              For over a century, the station welcomed passengers, transported agricultural goods, and formed the beating heart of commerce in Powys. Its distinctive Victorian architecture — red brick, ornate ironwork, wide canopied platforms — stands as a testament to the ambition of the railway age.
+            </p>
+            <p>
+              When passenger services were relocated, the original station building faced an uncertain future. Rather than see this treasured piece of heritage fall into disrepair, a passionate group of local investors and preservationists came together with a vision: to breathe new life into the station while honouring everything that made it special.
+            </p>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="https://picsum.photos/seed/station-history/700/500" alt="Historic railway station" class="w-full rounded-sm shadow-xl object-cover" />
+          <div class="absolute -bottom-6 -left-6 bg-station-gold text-white px-6 py-4 shadow-lg">
+            <div class="font-serif text-3xl font-bold">1860</div>
+            <div class="text-sm uppercase tracking-wider">Originally Built</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="py-20 bg-station-cream">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-station-gold uppercase tracking-widest text-sm font-semibold mb-2">Through the Years</p>
+        <h2 class="section-title">Our Timeline</h2>
+      </div>
+
+      <div class="relative">
+        <!-- Vertical line -->
+        <div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-station-gold/30 hidden md:block"></div>
+
+        <div class="space-y-12">
+          <!-- Item 1 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
+            <div class="md:text-right">
+              <div class="inline-block bg-station-green text-white font-serif font-bold px-4 py-2 text-xl mb-3">1860s</div>
+              <h3 class="font-serif text-xl font-bold text-station-green-dark mb-2">Station Opens</h3>
+              <p class="text-station-brown-light text-sm leading-relaxed">Welshpool station opens as part of the Cambrian Railways network, transforming trade and travel across Powys.</p>
+            </div>
+            <div class="md:order-last hidden md:block">
+              <img src="https://picsum.photos/seed/timeline-1860/350/200" alt="1860s railway" class="rounded-sm shadow-md w-full object-cover" />
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
+            <div class="hidden md:block">
+              <img src="https://picsum.photos/seed/timeline-1900/350/200" alt="Early 1900s station" class="rounded-sm shadow-md w-full object-cover" />
+            </div>
+            <div>
+              <div class="inline-block bg-station-green text-white font-serif font-bold px-4 py-2 text-xl mb-3">1900s</div>
+              <h3 class="font-serif text-xl font-bold text-station-green-dark mb-2">Golden Age of Rail</h3>
+              <p class="text-station-brown-light text-sm leading-relaxed">The station becomes one of the busiest in the region, serving hundreds of passengers and freight trains daily through both World Wars.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
+            <div class="md:text-right">
+              <div class="inline-block bg-station-green text-white font-serif font-bold px-4 py-2 text-xl mb-3">1990s</div>
+              <h3 class="font-serif text-xl font-bold text-station-green-dark mb-2">Closure &amp; New Vision</h3>
+              <p class="text-station-brown-light text-sm leading-relaxed">Following the closure of the mainline station, the historic building begins its transformation, with restoration work commencing to preserve its Victorian character.</p>
+            </div>
+            <div class="md:order-last hidden md:block">
+              <img src="https://picsum.photos/seed/timeline-1990/350/200" alt="Restoration work" class="rounded-sm shadow-md w-full object-cover" />
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
+            <div class="hidden md:block">
+              <img src="https://picsum.photos/seed/timeline-today/350/200" alt="The Old Station today" class="rounded-sm shadow-md w-full object-cover" />
+            </div>
+            <div>
+              <div class="inline-block bg-station-gold text-white font-serif font-bold px-4 py-2 text-xl mb-3">Today</div>
+              <h3 class="font-serif text-xl font-bold text-station-green-dark mb-2">A Destination Reborn</h3>
+              <p class="text-station-brown-light text-sm leading-relaxed">The Old Station Welshpool is now a thriving retail and café destination, home to independent shops, artisan food and a welcoming community atmosphere.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM / VALUES -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-station-gold uppercase tracking-widest text-sm font-semibold mb-2">What We Stand For</p>
+        <h2 class="section-title">Our Values</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center p-6 bg-station-cream rounded-sm">
+          <div class="w-16 h-16 bg-station-green rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-station-green-dark mb-2">Community</h3>
+          <p class="text-station-brown-light text-sm leading-relaxed">Supporting local businesses, creators and the Welshpool community.</p>
+        </div>
+        <div class="text-center p-6 bg-station-cream rounded-sm">
+          <div class="w-16 h-16 bg-station-green rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-station-green-dark mb-2">Quality</h3>
+          <p class="text-station-brown-light text-sm leading-relaxed">Every retailer and product is chosen with care and quality in mind.</p>
+        </div>
+        <div class="text-center p-6 bg-station-cream rounded-sm">
+          <div class="w-16 h-16 bg-station-green rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-station-green-dark mb-2">Heritage</h3>
+          <p class="text-station-brown-light text-sm leading-relaxed">Preserving and celebrating the rich railway history of Welshpool.</p>
+        </div>
+        <div class="text-center p-6 bg-station-cream rounded-sm">
+          <div class="w-16 h-16 bg-station-green rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-lg font-bold text-station-green-dark mb-2">Sustainability</h3>
+          <p class="text-station-brown-light text-sm leading-relaxed">Committed to sustainable practices and reducing our environmental footprint.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEET THE TEAM -->
+  <section class="py-20 bg-station-cream-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-station-gold uppercase tracking-widest text-sm font-semibold mb-2">The People Behind It</p>
+        <h2 class="section-title">Meet Our Team</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="text-center">
+          <img src="https://picsum.photos/seed/team-manager/300/300" alt="Centre Manager" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-station-gold/30 shadow-md" />
+          <h3 class="font-serif text-lg font-bold text-station-green-dark">Sarah Williams</h3>
+          <p class="text-station-gold text-sm font-semibold uppercase tracking-wide mb-2">Centre Manager</p>
+          <p class="text-station-brown-light text-sm leading-relaxed max-w-xs mx-auto">With over 15 years in retail management, Sarah oversees the day-to-day running of The Old Station with warmth and professionalism.</p>
+        </div>
+        <div class="text-center">
+          <img src="https://picsum.photos/seed/team-chef/300/300" alt="Head Chef" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-station-gold/30 shadow-md" />
+          <h3 class="font-serif text-lg font-bold text-station-green-dark">Tom Davies</h3>
+          <p class="text-station-gold text-sm font-semibold uppercase tracking-wide mb-2">Head Chef</p>
+          <p class="text-station-brown-light text-sm leading-relaxed max-w-xs mx-auto">Tom brings a passion for Welsh produce to our café kitchen, crafting menus that celebrate the best of local food culture.</p>
+        </div>
+        <div class="text-center">
+          <img src="https://picsum.photos/seed/team-events/300/300" alt="Events Coordinator" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-station-gold/30 shadow-md" />
+          <h3 class="font-serif text-lg font-bold text-station-green-dark">Nia Pugh</h3>
+          <p class="text-station-gold text-sm font-semibold uppercase tracking-wide mb-2">Events Coordinator</p>
+          <p class="text-station-brown-light text-sm leading-relaxed max-w-xs mx-auto">Nia brings the station to life with a programme of seasonal events, markets and community activities throughout the year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-station-green py-16 text-center">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="font-serif text-3xl text-white font-bold mb-4">Come and Experience It For Yourself</h2>
+      <p class="text-white/80 text-lg mb-8">We'd love to welcome you to The Old Station. Come and explore our shops, enjoy our café and soak up the atmosphere.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="shop.html" class="btn-gold">Browse Our Shops</a>
+        <a href="contact.html" class="btn-secondary border-white text-white hover:bg-white hover:text-station-green-dark">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-station-green-dark text-station-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-station-gold rounded-sm flex items-center justify-center text-white font-serif font-bold text-lg">OS</div>
+            <div>
+              <div class="font-serif font-bold text-lg leading-none">The Old Station</div>
+              <div class="text-station-gold-light text-xs uppercase tracking-widest">Welshpool</div>
+            </div>
+          </div>
+          <p class="text-station-cream/70 text-sm leading-relaxed">A Victorian railway station lovingly restored as a boutique retail and café destination in the heart of Powys.</p>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">About Us</a></li>
+            <li><a href="shop.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Our Shops</a></li>
+            <li><a href="cafe.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">The Café</a></li>
+            <li><a href="contact.html" class="text-station-cream/70 hover:text-station-gold-light transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Opening Hours</h4>
+          <ul class="space-y-2 text-sm text-station-cream/70">
+            <li class="flex justify-between"><span>Mon – Fri</span><span class="text-station-cream">9am – 5pm</span></li>
+            <li class="flex justify-between"><span>Saturday</span><span class="text-station-cream">9am – 5:30pm</span></li>
+            <li class="flex justify-between"><span>Sunday</span><span class="text-station-cream">10am – 4pm</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-base mb-4 text-station-gold-light uppercase tracking-wide">Contact</h4>
+          <address class="not-italic text-sm text-station-cream/70 space-y-2">
+            <p>Raven Square, Welshpool<br/>Powys, SY21 7AW</p>
+            <p><a href="tel:+441938123456" class="hover:text-station-gold-light transition-colors">01938 123 456</a></p>
+            <p><a href="mailto:hello@theoldstationwelshpool.co.uk" class="hover:text-station-gold-light transition-colors break-all">hello@theoldstationwelshpool.co.uk</a></p>
+          </address>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-station-cream/50">
+        <p>&copy; 2024 The Old Station Welshpool. All rights reserved.</p>
+        <p>Designed with ♥ in Wales</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dist/bundle.js"></script>
+</body>
+</html>

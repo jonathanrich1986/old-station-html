@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-station-charcoal bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-station-green text-white font-semibold px-6 py-3 rounded-sm hover:bg-station-green-dark transition-colors duration-200 tracking-wide;
+  }
+
+  .btn-secondary {
+    @apply inline-block border-2 border-station-green text-station-green font-semibold px-6 py-3 rounded-sm hover:bg-station-green hover:text-white transition-colors duration-200 tracking-wide;
+  }
+
+  .btn-gold {
+    @apply inline-block bg-station-gold text-white font-semibold px-6 py-3 rounded-sm hover:bg-station-brown transition-colors duration-200 tracking-wide;
+  }
+
+  .section-title {
+    @apply font-serif text-3xl md:text-4xl text-station-green-dark font-bold mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-station-brown-light text-lg mb-8 max-w-2xl;
+  }
+
+  .card {
+    @apply bg-white rounded-sm shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .nav-link {
+    @apply text-station-cream hover:text-station-gold-light transition-colors duration-200 font-medium tracking-wide text-sm uppercase;
+  }
+
+  .nav-link-active {
+    @apply text-station-gold-light border-b-2 border-station-gold-light;
+  }
+
+  .form-input {
+    @apply w-full border border-gray-300 rounded-sm px-4 py-3 text-station-charcoal focus:outline-none focus:border-station-green focus:ring-1 focus:ring-station-green transition-colors;
+  }
+
+  .form-label {
+    @apply block text-sm font-semibold text-station-charcoal mb-1 uppercase tracking-wide;
+  }
+
+  .badge {
+    @apply inline-block bg-station-gold text-white text-xs font-bold px-2 py-1 uppercase tracking-wider;
+  }
+
+  .divider-ornament {
+    @apply flex items-center gap-4 my-6;
+  }
+
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: '';
+    @apply flex-1 h-px bg-station-gold-light opacity-40;
+  }
+}
